@@ -1,0 +1,20 @@
+{
+  "name": "alexandrejablonski_3_04032021-",
+  "version": "1.0.0",
+  "description": "Projet 3 du parcours OpenClassRoom Developpeur Web",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/main.css",
+    "sass": "sass --watch ./sass/menu.scss:./css/menu.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aleksandrej/AlexandreJablonski_3_04032021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aleksandrej/AlexandreJablonski_3_04032021/issues"
+  },
+  "homepage": "https://github.com/aleksandrej/AlexandreJablonski_3_04032021#readme"
+}

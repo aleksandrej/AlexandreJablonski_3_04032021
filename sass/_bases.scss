@@ -1,0 +1,15 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+$primary_color: #9356DC;
+$primary_color--light: lighten($primary_color, 10%);
+$secondary_color: #FF79DA;
+$secondary_color--light: lighten($secondary_color, 10%);
+$tertiary_color: #99E2D0;
+$location_color: rgb(234, 234, 234);
+$background_color: rgb(246, 246, 246);
