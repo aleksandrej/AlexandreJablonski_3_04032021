@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/aleksandrej/AlexandreJablonski_3_04032021/issues"
   },
-  "homepage": "https://github.com/aleksandrej/AlexandreJablonski_3_04032021#readme"
+  "homepage": "https://github.com/aleksandrej/AlexandreJablonski_3_04032021#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.7",
+    "postcss-cli": "^8.3.1"
+  }
 }

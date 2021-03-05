@@ -2,9 +2,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto'; }
+  font-family: "Roboto"; }
+
+a {
+  text-decoration: none; }
+
+#search::placeholder {
+  font-size: 1em;
+  color: black;
+  font-weight: bold; }
 
 body {
   background-color: yellow; }
+
+@media screen and (max-width: 767px) {
+  body {
+    background-color: lightblue; } }
 
 /*# sourceMappingURL=menu.css.map */

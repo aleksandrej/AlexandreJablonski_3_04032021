@@ -1,5 +1,41 @@
 @import "bases.scss";
 
 body {
-    background-color: red;
+  max-width: 1024px;
 }
+
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .header__search {
+    width: 100%;
+    background-color:$location_color;
+    
+    .header__search__location {
+      width: 100%;
+      margin: 1rem 0;
+      display: flex;
+      justify-content: center;
+        #search {
+            border: none;
+            padding: 0 0 0 1.5rem;
+            background-color: $location_color;
+        }
+    }
+  }
+
+  .header__logo {
+    // width: 100%;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    img {
+      width: 50%;
+      object-fit: cover;
+    }
+  }
+}
+
