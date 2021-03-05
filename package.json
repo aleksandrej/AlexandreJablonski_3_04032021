@@ -4,8 +4,8 @@
   "description": "Projet 3 du parcours OpenClassRoom Developpeur Web",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/main.css",
-    "sass": "sass --watch ./sass/menu.scss:./css/menu.css"
+    "main": "sass --watch ./sass/main.scss:./css/main.css",
+    "menu": "sass --watch ./sass/menu.scss:./css/menu.css"
   },
   "repository": {
     "type": "git",
