@@ -1,8 +1,7 @@
 @import "bases.scss";
+@import "keyframes.scss";
 
-body {
-  max-width: 1024px;
-}
+// HEADER
 
 header {
   width: 100%;
@@ -12,18 +11,20 @@ header {
 
   .header__search {
     width: 100%;
-    background-color:$location_color;
-    
+    background-color: $location_color;
+    border-top: 3px solid #e0e0e0be;
+    // margin-bottom: 20px;
+
     .header__search__location {
       width: 100%;
       margin: 1rem 0;
       display: flex;
       justify-content: center;
-        #search {
-            border: none;
-            padding: 0 0 0 1.5rem;
-            background-color: $location_color;
-        }
+      #search {
+        border: none;
+        padding: 0 0 0 1.5rem;
+        background-color: $location_color;
+      }
     }
   }
 
@@ -39,3 +40,54 @@ header {
   }
 }
 
+// MAIN
+main {
+  text-align: center;
+}
+
+.introduction {
+  width: 100%;
+  background-color: #f6f6f6;
+  // display: flex;
+  text-align: center;
+  padding: 10px;
+
+  h1 {
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 10px 40px;
+  }
+
+  h2 {
+    font-size: 1em;
+    font-weight: 100;
+  }
+}
+
+.operation {
+  margin: 40px 20px;
+  h2 {
+    text-align: left;
+  }
+}
+
+.operation_cards_container {
+  display: flex;
+  flex-direction: column;
+
+  .operation_cards {
+    width: auto;
+    margin: 15px 0px;
+    text-align: left;
+    background-color: #f6f6f6;
+    // border: 2px solid black;
+    border-radius: 20px;
+    padding: 1.3em 1em;
+    box-shadow: 2px 2px 10px 2px #eaeaea;
+
+    i {
+      margin: 0 20px;
+    }
+  }
+}
