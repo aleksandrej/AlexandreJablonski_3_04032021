@@ -76,7 +76,6 @@ main {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  
 
   .operation_cards {
     @include box-shadows;
@@ -87,7 +86,6 @@ main {
     // border: 2px solid black;
     border-radius: 20px;
     padding: 1.3em 1em;
-    
 
     i {
       margin: 0 20px;
@@ -112,13 +110,13 @@ main {
 
 .restaurants {
   background-color: $background_color;
-  margin: 20px 0px;
+  // margin: 20px 0px;
   padding-bottom: 40px;
   h2 {
     text-align: left;
     margin: 30px 20px;
     padding-top: 40px;
-      }
+  }
   h3 {
     margin: 10px;
   }
@@ -144,6 +142,44 @@ main {
       overflow: hidden;
     }
   }
+
+  .cards_news {
+    text-align: center;
+    background-color: #99e2d0;
+    color: #2c9c81;
+    width: 100px;
+    position: absolute;
+    right: 25px;
+    margin-top: 20px;
+    padding: 7px 8px;
+    font-weight: bold;
+  }
+}
+
+footer {
+  background-color: #333;
+  // height: auto;
+}
+
+.footer_container {
+  img {
+    max-width: 100px;
+    filter: invert(1);
+    margin: 20px;
+  }
+
+  .footer_informations_list {
+    margin: 0px 20px;
+    color: white;
+
+    li {
+      padding: 3px 0px;
+
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
 }
 
 // .restaurants_cards_pictOne {
@@ -156,4 +192,3 @@ main {
 // .restaurants_cards_pictThree {
 //   object-position: 0px -80px;
 // }
-
