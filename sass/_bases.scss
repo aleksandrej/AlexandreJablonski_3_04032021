@@ -27,22 +27,26 @@ ul {
 
 .btn_container {
   margin: 40px auto 50px;
-  background-color: line;
+  // background-color: line;
   // background: #444;
 }
 
 .btn {
   border: 2px transparent;
   border-radius: 20px;
+  // @include box-shadows;
+  box-shadow: 0px 5px 15px 0px lightgray ;
   padding: 0.8em 1em;
   font-weight: bold;
   color: white;
   background: linear-gradient($secondary_color, $primary_color);
-  
-}
+  transition: 0.2s;
 
-@mixin box-shadows {
-  box-shadow: 2px 2px 10px 2px #eaeaea;
+  &:hover {
+    background: linear-gradient(lighten($secondary_color, 5), lighten($primary_color, 5));
+    box-shadow: 0 5px 15px 0 darken(lightgrey, 35);
+  }
+  
 }
 
 
