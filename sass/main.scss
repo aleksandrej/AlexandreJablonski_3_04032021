@@ -1,5 +1,8 @@
 @import "bases.scss";
+@import "variables.scss";
 @import "keyframes.scss";
+@import "animations.scss";
+@import "transform.scss";
 
 // HEADER
 
@@ -112,6 +115,7 @@ main {
   background-color: $background_color;
   // margin: 20px 0px;
   padding-bottom: 40px;
+  
   h2 {
     text-align: left;
     margin: 30px 20px;
@@ -120,8 +124,13 @@ main {
   h3 {
     margin: 10px;
   }
+
+  h4 {
+    margin:0px auto 0px 10px ;
+    font-weight: 300;
+  }
   p {
-    margin: -5px auto 0px 10px;
+    margin: 10px auto 0px 10px;
   }
 
   .restaurants_cards {
@@ -141,6 +150,9 @@ main {
       border-radius: 20px 20px 0px 0px;
       overflow: hidden;
     }
+    
+      
+    }
   }
 
   .cards_news {
@@ -150,15 +162,18 @@ main {
     width: 100px;
     position: absolute;
     right: 25px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 7px 8px;
     font-weight: bold;
   }
-}
+
+
+// FOOTER
 
 footer {
   background-color: #333;
   // height: auto;
+  padding-bottom: 20px;
 }
 
 .footer_container {
@@ -169,7 +184,7 @@ footer {
   }
 
   .footer_informations_list {
-    margin: 0px 20px;
+    margin: 0px 8px;
     color: white;
 
     li {
@@ -178,17 +193,11 @@ footer {
       i {
         margin-right: 10px;
       }
+
+      a {
+        color: white;
+      }
     }
   }
 }
 
-// .restaurants_cards_pictOne {
-//   object-position: 0px -70px;
-// }
-// .restaurants_cards_pictTwo {
-//   object-position: 0px -160px;
-// }
-
-// .restaurants_cards_pictThree {
-//   object-position: 0px -80px;
-// }
