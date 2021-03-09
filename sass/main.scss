@@ -7,7 +7,7 @@
 
 // HEADER
 
-header {
+#header_index {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -200,7 +200,13 @@ footer {
       padding: 3px 0px;
 
       i {
-        margin-right: 10px;
+        margin-top: 5px;
+        font-size: 12px;
+        position: absolute;
+      }
+
+      span {
+        margin-left: 25px;
       }
 
       a {

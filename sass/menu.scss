@@ -1,12 +1,165 @@
 @import "bases.scss";
+@import "variables.scss";
+@import "mixins.scss";
 @import "keyframes.scss";
+@import "animations.scss";
+@import "transform.scss";
 
-body {
-    background-color: yellow;
+// HEADER
+
+#menu_index {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  i {
+    position: absolute;
+    left: 15px;
+    top: 23px;
+  }
+  .header__logo {
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+
+    img {
+      width: 50%;
+      object-fit: cover;
+    }
+  }
+
+  .menu_cover_image {
+    width: 100%;
+    height: 250px;
+    z-index: -1;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
-@media screen and (max-width: 767px) {
-    body {
-        background-color: lightblue;
+// MAIN
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background-color: $background_color;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  margin-top: -45px;
+  padding: 15px;
+
+  .restaurant_title {
+    // position: relative;
+    border-radius: 20px 20px 0px 0px;
+    h1 {
+      font-family: "Shrikhand", cursive;
+      font-size: 1.7em;
+      margin: 15px 0px;
+      opacity: 0.9;
     }
+
+    .like {
+      //   position: absolute;
+      right: 20px;
+      bottom: 12px;
+    }
+  }
+
+  .menu_subTitles {
+    width: 40px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    font-size: 1em;
+    font-weight: 300;
+    overflow: visible;
+    border-bottom: 3px solid #99e2d0;
+  }
+}
+
+// MENU
+
+.menu_container_cards {
+  // width: 100%;
+  // align-items: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cards_menu {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  padding: 13px 10px;
+  background-color: white;
+  border-radius: 20px;
+
+  h3 {
+    margin: 0px 0px 3px 0px;
+    font-weight: 500;
+  }
+
+  h4 {
+    font-weight: 200;
+  }
+
+  .menu_price {
+    position: absolute;
+    right: 15px;
+    bottom: 13px;
+  }
+}
+
+.btn_container a {
+    padding: 15px 39px;
+    font-weight: 300;
+}
+
+// FOOTER
+
+footer {
+  background-color: #333;
+  // height: auto;
+  padding-bottom: 20px;
+}
+
+.footer_container {
+  img {
+    max-width: 100px;
+    filter: invert(1);
+    margin: 20px;
+  }
+
+  .footer_informations_list {
+    margin: 0px 8px;
+    color: white;
+
+    li {
+      padding: 3px 0px;
+
+      i {
+        margin-top: 5px;
+        font-size: 12px;
+        position: absolute;
+      }
+
+      span {
+        margin-left: 25px;
+      }
+
+      a {
+        color: white;
+      }
+    }
+  }
 }

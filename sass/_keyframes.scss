@@ -70,6 +70,8 @@
 
   100% {
     opacity: 0;
+    z-index: -5;
+    // Si pas de z-index autres effets HS 
     
   }
 }
