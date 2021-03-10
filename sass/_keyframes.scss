@@ -94,24 +94,13 @@
 }
 
 
-
 // CHECKBOX 
 
-
-@keyframes fadein {
-  from {
-    transform: scale(.1);
-  }
-
-  to {
-    transform: scale(1);
-  }
-}
 
 // FADEIN MENU
 @keyframes fadein {
   from {
-      transform: scale(.8);
+      transform: scale(.5);
       margin-top: 10%;
       opacity: 0;
     }
