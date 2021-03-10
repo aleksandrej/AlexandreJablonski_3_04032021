@@ -49,9 +49,8 @@
     right: -55px;
     background-color: $tertiary_color;
     overflow: hidden;
-    flex-basis: 15%;
     text-align: center;
-    width: 15%;
+    width: 20%;
     position: absolute;
     color: white;
     display: block;
@@ -69,6 +68,7 @@
   &:hover {
     @include box-shadows;
     cursor: pointer;
+    
 
     hgroup {
       flex: 1;
@@ -78,22 +78,17 @@
       white-space: nowrap;
     }
 
+    .menu_price {
+        display: block;
+        // position:initial;
+    }
+
     .menu_checkbox {
     
       top: 0px;
       right: 0px;
-      background-color: $tertiary_color;
-      overflow: hidden;
-      flex-basis: 15%;
-      text-align: center;
       width: 15%;
-      position: absolute;
-      color: white;
-      // height: 100%;
-      display: block;
-      border-bottom-right-radius: 15px;
-      border-top-right-radius: 15px;
-      padding: 21px 0px;
+      display: inline-block;
       transform: translateX(0px);
 
       .fa-check-circle {

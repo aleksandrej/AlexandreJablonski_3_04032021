@@ -322,9 +322,8 @@ ul {
     right: -55px;
     background-color: #99e2d0;
     overflow: hidden;
-    flex-basis: 15%;
     text-align: center;
-    width: 15%;
+    width: 20%;
     position: absolute;
     color: white;
     display: block;
@@ -343,20 +342,13 @@ ul {
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap; }
+    .cards_menu:hover .menu_price {
+      display: block; }
     .cards_menu:hover .menu_checkbox {
       top: 0px;
       right: 0px;
-      background-color: #99e2d0;
-      overflow: hidden;
-      flex-basis: 15%;
-      text-align: center;
       width: 15%;
-      position: absolute;
-      color: white;
-      display: block;
-      border-bottom-right-radius: 15px;
-      border-top-right-radius: 15px;
-      padding: 21px 0px;
+      display: inline-block;
       transform: translateX(0px); }
       .cards_menu:hover .menu_checkbox .fa-check-circle {
         animation: check-box ease 0.7s;
