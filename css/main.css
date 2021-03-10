@@ -14,7 +14,8 @@ ul {
 #search::placeholder {
   font-size: 1.2em;
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+  opacity: 1; }
 
 .btn_container {
   margin: 40px auto 50px; }
@@ -48,7 +49,8 @@ ul {
 #search::placeholder {
   font-size: 1.2em;
   color: black;
-  font-weight: bold; }
+  font-weight: bold;
+  opacity: 1; }
 
 .btn_container {
   margin: 40px auto 50px; }
@@ -128,6 +130,165 @@ ul {
   100% {
     background: #fface8;
     transform: rotate(360deg); } }
+@keyframes fadein {
+  from {
+    transform: scale(0.1); }
+  to {
+    transform: scale(1); } }
+@keyframes fadein {
+  from {
+    transform: scale(0.8);
+    margin-top: 10%;
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  /* sur Firefox */
+  from {
+    transform: scale(0.8);
+    margin-top: 10%;
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    transform: scale(0.8);
+    margin-top: 10%;
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ul {
+  list-style-type: none; }
+
+#search::placeholder {
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold;
+  opacity: 1; }
+
+.btn_container {
+  margin: 40px auto 50px; }
+
+.btn {
+  border: 2px transparent;
+  border-radius: 25px;
+  box-shadow: 0px 5px 15px 0px lightgray;
+  padding: 0.8em 1em;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(#ff79da, #9356dc);
+  transition: 0.2s; }
+  .btn:hover {
+    background: linear-gradient(#ff93e1, #a16be0);
+    box-shadow: 0 5px 15px 0 #7a7a7a; }
+
+.loadspinner {
+  animation: loadspinner 2.5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 100; }
+  .loadspinner::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  .loadspinner .spinner-wrapper {
+    border: 5px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 100px; }
+    .loadspinner .spinner-wrapper .spinner-cover {
+      background: white;
+      border-radius: 50%;
+      height: 100%;
+      position: relative;
+      width: 100%;
+      z-index: 2; }
+    .loadspinner .spinner-wrapper .spinner-bar {
+      animation: spinner 2s linear infinite;
+      border-radius: 50% 0%;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform-origin: 100% 100%;
+      width: 50%; }
+
+@keyframes loadspinner {
+  0% {
+    background-color: #9356dc;
+    opacity: 0.8; }
+  50% {
+    background-color: #fface8; }
+  100% {
+    opacity: 0;
+    z-index: -5; } }
+@keyframes spinner {
+  0% {
+    background: #fface8;
+    transform: rotate(0deg); }
+  50% {
+    background: #fface8;
+    transform: rotate(180deg); }
+  100% {
+    background: #fface8;
+    transform: rotate(360deg); } }
+@keyframes fadein {
+  from {
+    transform: scale(0.1); }
+  to {
+    transform: scale(1); } }
+@keyframes fadein {
+  from {
+    transform: scale(0.8);
+    margin-top: 10%;
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
+@-moz-keyframes fadein {
+  /* sur Firefox */
+  from {
+    transform: scale(0.8);
+    margin-top: 10%;
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
+@-webkit-keyframes fadein {
+  /* sur Safari et Chrome */
+  from {
+    transform: scale(0.8);
+    margin-top: 10%;
+    opacity: 0; }
+  to {
+    transform: scale(1);
+    opacity: 1; } }
 .like {
   position: relative;
   font-size: 25px;
@@ -152,6 +313,9 @@ ul {
     font-weight: bold;
     opacity: 1;
     transition: .6s 0s ease; }
+
+.cards_menu {
+  animation: fadein 0.8s; }
 
 #header_index {
   width: 100%;

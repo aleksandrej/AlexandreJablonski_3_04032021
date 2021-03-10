@@ -21,9 +21,14 @@ ul {
   font-size: 1.2em;
   color: black;
   font-weight: bold;
+  opacity: 1;
 }
 
 // BOUTONS
+
+@mixin box-shadows {
+  box-shadow: 2px 2px 10px 2px #eaeaea;
+}
 
 .btn_container {
   margin: 40px auto 50px;

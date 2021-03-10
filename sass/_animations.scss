@@ -1,2 +1,54 @@
+@import "keyframes";
+
+// LIKE
+
+.like {
+    position: relative;
+    font-size: 25px;
+    left: 1px;
+    cursor: pointer;
+    transition: 2s ;
+    color: grey;
+  
+    .empty-icon {
+        opacity: 0;
+        position: absolute;
+    }
+  
+    
+    i {
+      position: absolute;
+      right: 25px;
+      bottom: 10px;
+      color:lightgrey;
+      
+  
+    }
+  
+    &:hover {
+        .full-icon {
+           opacity: 0;
+           font-weight: bold;
+            transition: .6s 0s ease;
+          }
+      
+          .empty-icon {
+            color:$primary_color;
+            font-weight: bold;
+            opacity: 1;
+            transition: .6s 0s ease;
+          }
+    }
+  
+    
+  }
+
+// MENU ANIMATION
+.cards_menu {
+    animation: fadein 0.8s;
+    
+}
+
+
 
 
