@@ -96,6 +96,16 @@
 
 // CHECKBOX 
 
+@keyframes check-box {
+  10% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(-360deg) scale(1);
+  }
+}
+
 
 // FADEIN MENU
 @keyframes fadein {
@@ -134,3 +144,5 @@
       opacity: 1;
     }
 }
+
+
