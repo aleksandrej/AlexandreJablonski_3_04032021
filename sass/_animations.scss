@@ -41,7 +41,7 @@
 
 // MENU ANIMATION
 .cards_menu {
-    overflow: hidden;
+  overflow: hidden;
   animation: fadein 0.8s;
 
   .menu_checkbox {
@@ -68,27 +68,16 @@
   &:hover {
     @include box-shadows;
     cursor: pointer;
-    
 
-    hgroup {
-      flex: 1;
-      //   width: auto;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .menu_price {
-        display: block;
-        // position:initial;
+    .cards_menu {
+      width: auto;
     }
 
     .menu_checkbox {
-    
       top: 0px;
       right: 0px;
       width: 15%;
-      // display: inline-block;
+      display: block;
       transform: translateX(0px);
       transition: transform 0.8s;
 

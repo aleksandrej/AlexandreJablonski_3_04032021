@@ -1,11 +1,88 @@
 
-
-
-
-/* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 1024px et 1280px */
-@media screen and (min-width: 769px) and (max-width: 991px) {
+// RESPONSIVE MAIN
+@media screen and (min-width: 768px) and (max-width: 991px) {
+        
+    #header_index {
+      // flex-direction: column;
+  
+      .header__logo img {
+        width: 80%;
+      }
+    }
+  
     
+  
+  }
+  
+  
+  @media screen and (min-width: 992px) {
+          
+    #header_index {
+      // flex-direction: column;
+  
+      .header__logo img {
+        width: 100%;
+      }
+    }
+  
+    .operation_cards_container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+  
+      .operation_cards {
+        width: 100%;
+      }
+    }
+  
+    .restaurants_cards_container {
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  
+      .restaurants_cards {
+        width: 100%;
+      }
+    }
+  
+  }
 
+
+// RESPONSIVE MENU
+@media screen and (min-width: 768px) and (max-width: 1019px) {
+
+  
+
+}
+
+@media screen and (min-width: 1020px) {
+  #menu_index {
+    .header__logo img {
+      width: 100%;
+    }
+  }
+
+  .restaurant_title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    h1 {
+      width: 100%;
+    }
+  }
+
+  .menu_container_cards {
+    width: 30% ;
+  }
+.menu_title {
+  overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+}
+  
 }
 
 

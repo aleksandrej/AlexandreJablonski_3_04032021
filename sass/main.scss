@@ -219,52 +219,7 @@ footer {
 }
 
 
-// RESPONSIVE
-@media screen and (min-width: 768px) and (max-width: 991px) {
-        
-  #header_index {
-    // flex-direction: column;
-
-    .header__logo img {
-      width: 80%;
-    }
-  }
-
-  
-
-}
 
 
-@media screen and (min-width: 992px) {
-        
-  #header_index {
-    // flex-direction: column;
 
-    .header__logo img {
-      width: 100%;
-    }
-  }
-
-  .operation_cards_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    .operation_cards {
-      width: 100%;
-    }
-  }
-
-  .restaurants_cards_container {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    .restaurants_cards {
-      width: 100%;
-    }
-  }
-
-}
-
+@import "responsives.scss"

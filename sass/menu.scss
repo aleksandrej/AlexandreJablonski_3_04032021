@@ -96,7 +96,7 @@ main {
   position: relative;
   width: auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   margin-bottom: 15px;
   padding: 13px 10px;
   background-color: white;
@@ -105,17 +105,23 @@ main {
   h3 {
     margin: 0px 0px 3px 0px;
     font-weight: 500;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   h4 {
     font-weight: 200;
     font-size: 1em;
+    width: 89%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .menu_price {
-    position: absolute;
-    right: 15px;
-    bottom: 13px;
+    margin-right: 5px;
   }
 }
 
@@ -163,38 +169,4 @@ footer {
   }
 }
 
-// RESPONSIVE
-@media screen and (min-width: 768px) and (max-width: 1019px) {
-
-  
-
-}
-
-@media screen and (min-width: 1020px) {
-  #menu_index {
-    .header__logo img {
-      width: 100%;
-    }
-  }
-
-  .restaurant_title {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-
-    h1 {
-      width: 100%;
-    }
-  }
-
-  .menu_container_cards {
-    width: 30% ;
-  }
-.menu_title {
-  overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-}
-  
-}
+@import "responsives.scss";
