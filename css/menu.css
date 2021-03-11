@@ -319,7 +319,7 @@ ul {
   animation: fadein 0.8s; }
   .cards_menu .menu_checkbox {
     top: 0px;
-    right: -120px;
+    right: -39px;
     background-color: #99e2d0;
     overflow: hidden;
     text-align: center;
@@ -330,22 +330,34 @@ ul {
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     padding: 21px 0px;
-    transform: translateX(30px);
-    transition: transform 0.8s; }
+    transform: translateX(39px);
+    transition: transform 0.8s ease-in-out; }
   .cards_menu i {
     font-size: 30px; }
   .cards_menu:hover {
     box-shadow: 2px 2px 10px 2px #eaeaea;
     cursor: pointer; }
     .cards_menu:hover .cards_menu {
-      width: auto; }
+      display: inline; }
+    .cards_menu:hover .menu_title {
+      margin: 0px 0px 3px 0px;
+      font-weight: 500;
+      width: 80%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .cards_menu:hover h4 {
+      width: 75%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
     .cards_menu:hover .menu_checkbox {
       top: 0px;
       right: 0px;
       width: 15%;
-      display: block;
+      position: absolute;
       transform: translateX(0px);
-      transition: transform 0.8s; }
+      transition: transform 0.8s ease-in-outt; }
       .cards_menu:hover .menu_checkbox .fa-check-circle {
         animation: check-box ease 0.7s;
         animation-iteration-count: 1;
