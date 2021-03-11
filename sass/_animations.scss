@@ -46,7 +46,7 @@
 
   .menu_checkbox {
     top: 0px;
-    right: -55px;
+    right: -120px;
     background-color: $tertiary_color;
     overflow: hidden;
     text-align: center;
@@ -88,8 +88,9 @@
       top: 0px;
       right: 0px;
       width: 15%;
-      display: inline-block;
+      // display: inline-block;
       transform: translateX(0px);
+      transition: transform 0.8s;
 
       .fa-check-circle {
         animation: check-box ease 0.7s;

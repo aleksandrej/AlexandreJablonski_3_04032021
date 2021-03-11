@@ -3,7 +3,6 @@
 @import "keyframes.scss";
 @import "animations.scss";
 
-
 // HEADER
 
 #menu_index {
@@ -102,17 +101,15 @@ main {
   padding: 13px 10px;
   background-color: white;
   border-radius: 20px;
-  
 
   h3 {
     margin: 0px 0px 3px 0px;
     font-weight: 500;
-    
   }
 
   h4 {
     font-weight: 200;
-    
+    font-size: 1em;
   }
 
   .menu_price {
@@ -120,14 +117,11 @@ main {
     right: 15px;
     bottom: 13px;
   }
-
- 
-
 }
 
 .btn_container a {
-    padding: 15px 39px;
-    font-weight: 300;
+  padding: 15px 39px;
+  font-weight: 300;
 }
 
 // FOOTER
@@ -167,4 +161,40 @@ footer {
       }
     }
   }
+}
+
+// RESPONSIVE
+@media screen and (min-width: 768px) and (max-width: 1019px) {
+
+  
+
+}
+
+@media screen and (min-width: 1020px) {
+  #menu_index {
+    .header__logo img {
+      width: 100%;
+    }
+  }
+
+  .restaurant_title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    h1 {
+      width: 100%;
+    }
+  }
+
+  .menu_container_cards {
+    width: 30% ;
+  }
+.menu_title {
+  overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+}
+  
 }

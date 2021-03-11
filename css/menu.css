@@ -319,7 +319,7 @@ ul {
   animation: fadein 0.8s; }
   .cards_menu .menu_checkbox {
     top: 0px;
-    right: -55px;
+    right: -120px;
     background-color: #99e2d0;
     overflow: hidden;
     text-align: center;
@@ -348,8 +348,8 @@ ul {
       top: 0px;
       right: 0px;
       width: 15%;
-      display: inline-block;
-      transform: translateX(0px); }
+      transform: translateX(0px);
+      transition: transform 0.8s; }
       .cards_menu:hover .menu_checkbox .fa-check-circle {
         animation: check-box ease 0.7s;
         animation-iteration-count: 1;
@@ -428,7 +428,8 @@ main {
     margin: 0px 0px 3px 0px;
     font-weight: 500; }
   .cards_menu h4 {
-    font-weight: 200; }
+    font-weight: 200;
+    font-size: 1em; }
   .cards_menu .menu_price {
     position: absolute;
     right: 15px;
@@ -459,5 +460,25 @@ footer {
       margin-left: 25px; }
     .footer_container .footer_informations_list li a {
       color: white; }
+
+@media screen and (min-width: 1020px) {
+  #menu_index .header__logo img {
+    width: 100%; }
+
+  .restaurant_title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .restaurant_title h1 {
+      width: 100%; }
+
+  .menu_container_cards {
+    width: 30%; }
+
+  .menu_title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; } }
 
 /*# sourceMappingURL=menu.css.map */
