@@ -495,9 +495,15 @@ footer {
     justify-content: space-around; }
     .restaurants_cards_container .restaurants_cards {
       width: 100%; } }
+@media screen and (min-width: 768px) and (max-width: 1019px) {
+  .restaurant_title {
+    padding: 0 180px; } }
 @media screen and (min-width: 1020px) {
   #menu_index .header__logo img {
     width: 100%; }
+
+  .cards_menu {
+    width: 80%; }
 
   .restaurant_title {
     display: flex;
