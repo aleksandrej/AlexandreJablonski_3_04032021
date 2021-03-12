@@ -113,15 +113,18 @@ main {
 
   h4 {
     font-weight: 200;
-    font-size: 1em;
-    width: 89%;
+    font-size: 0.9em;
+    width: 80%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
   }
 
   .menu_price {
-    margin-right: 5px;
+    width: 15%;
+    margin-right: 2px;
+    margin-left: auto;
+    
   }
 }
 
