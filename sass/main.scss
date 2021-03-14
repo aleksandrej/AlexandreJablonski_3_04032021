@@ -6,6 +6,8 @@
 
 
 
+
+
 // HEADER
 
 #header_index {
@@ -146,6 +148,7 @@ main {
 
   .restaurants_cards {
     @include box-shadows;
+    position: relative;
     display: flex;
     flex-direction: column;
     width: auto;
@@ -167,13 +170,13 @@ main {
   }
 
   .cards_news {
+    right: 20px;
     text-align: center;
     background-color: #99e2d0;
     color: #2c9c81;
     width: 100px;
     position: absolute;
-    right: 25px;
-    margin-top: 10px;
+      margin-top: 10px;
     padding: 7px 8px;
     font-weight: bold;
   }
@@ -188,6 +191,7 @@ footer {
 }
 
 .footer_container {
+  
   img {
     max-width: 100px;
     filter: invert(1);

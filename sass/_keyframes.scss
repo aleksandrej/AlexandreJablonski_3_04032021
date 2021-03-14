@@ -3,61 +3,6 @@
 
 // LOAD SPINNER
 
-.loadspinner {
-  animation: loadspinner 2.5s;
-  animation-delay: 2s;
-  animation-fill-mode:both;
-  // background-color: linear-gradient($secondary_color, $primary_color);
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  text-align: center;
-  top: 0;
-  z-index: 100;
-
-  &::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-  }
-
-  .spinner-wrapper {
-    border: 5px solid white;
-    border-radius: 50%;
-    display: inline-block;
-    height: 100px;
-    overflow: hidden;
-    padding: 10px;
-    position: relative;
-    vertical-align: middle;
-    width: 100px;
-
-
-    .spinner-cover {
-      background:white;
-      border-radius: 50%;
-      height: 100%;
-      position: relative;
-      width: 100%;
-      z-index: 2;
-    }
-
-    .spinner-bar {
-      animation: spinner 2s linear infinite;
-      // background: $secondary_color;
-      border-radius: 50% 0%;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform-origin: 100% 100%;
-      width: 50%;
-    }
-  }
-}
-
 @keyframes loadspinner {
   0% {
     background-color: $primary_color;

@@ -3,9 +3,12 @@
 @import "keyframes.scss";
 @import "animations.scss";
 
+
+
 // HEADER
 
 #menu_index {
+  position: relative;
   width: 100%;
   display: flex;
   flex-wrap: wrap;

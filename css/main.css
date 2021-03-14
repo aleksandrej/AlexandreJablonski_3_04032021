@@ -68,49 +68,6 @@ ul {
     background: linear-gradient(#ff93e1, #a16be0);
     box-shadow: 0 5px 15px 0 #7a7a7a; }
 
-.loadspinner {
-  animation: loadspinner 2.5s;
-  animation-delay: 2s;
-  animation-fill-mode: both;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  text-align: center;
-  top: 0;
-  z-index: 100; }
-  .loadspinner::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle; }
-  .loadspinner .spinner-wrapper {
-    border: 5px solid white;
-    border-radius: 50%;
-    display: inline-block;
-    height: 100px;
-    overflow: hidden;
-    padding: 10px;
-    position: relative;
-    vertical-align: middle;
-    width: 100px; }
-    .loadspinner .spinner-wrapper .spinner-cover {
-      background: white;
-      border-radius: 50%;
-      height: 100%;
-      position: relative;
-      width: 100%;
-      z-index: 2; }
-    .loadspinner .spinner-wrapper .spinner-bar {
-      animation: spinner 2s linear infinite;
-      border-radius: 50% 0%;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform-origin: 100% 100%;
-      width: 50%; }
-
 @keyframes loadspinner {
   0% {
     background-color: #9356dc;
@@ -195,49 +152,6 @@ ul {
   .btn:hover {
     background: linear-gradient(#ff93e1, #a16be0);
     box-shadow: 0 5px 15px 0 #7a7a7a; }
-
-.loadspinner {
-  animation: loadspinner 2.5s;
-  animation-delay: 2s;
-  animation-fill-mode: both;
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  right: 0;
-  text-align: center;
-  top: 0;
-  z-index: 100; }
-  .loadspinner::before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle; }
-  .loadspinner .spinner-wrapper {
-    border: 5px solid white;
-    border-radius: 50%;
-    display: inline-block;
-    height: 100px;
-    overflow: hidden;
-    padding: 10px;
-    position: relative;
-    vertical-align: middle;
-    width: 100px; }
-    .loadspinner .spinner-wrapper .spinner-cover {
-      background: white;
-      border-radius: 50%;
-      height: 100%;
-      position: relative;
-      width: 100%;
-      z-index: 2; }
-    .loadspinner .spinner-wrapper .spinner-bar {
-      animation: spinner 2s linear infinite;
-      border-radius: 50% 0%;
-      height: 50%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform-origin: 100% 100%;
-      width: 50%; }
 
 @keyframes loadspinner {
   0% {
@@ -367,10 +281,57 @@ ul {
         animation-iteration-count: 1;
         background-color: #99e2d0; }
 
+.loadspinner {
+  animation: loadspinner 2.5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 100; }
+  .loadspinner::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  .loadspinner .spinner-wrapper {
+    border: 5px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    height: 100px;
+    overflow: hidden;
+    padding: 10px;
+    position: relative;
+    vertical-align: middle;
+    width: 100px; }
+    .loadspinner .spinner-wrapper .spinner-cover {
+      background: white;
+      border-radius: 50%;
+      height: 100%;
+      position: relative;
+      width: 100%;
+      z-index: 2; }
+    .loadspinner .spinner-wrapper .spinner-bar {
+      animation: spinner 2s linear infinite;
+      border-radius: 50% 0%;
+      height: 50%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform-origin: 100% 100%;
+      width: 50%; }
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
   #header_index .header__logo img {
     width: 80%; } }
 @media screen and (min-width: 992px) {
+  #header_index, main {
+    margin: auto;
+    max-width: 1280px; }
+
   #header_index .header__logo img {
     width: 100%; }
 
@@ -386,13 +347,22 @@ ul {
     flex-direction: row;
     justify-content: space-around; }
     .restaurants_cards_container .restaurants_cards {
-      width: 100%; } }
+      width: 100%; }
+
+  footer {
+    text-align: center; } }
 @media screen and (min-width: 768px) and (max-width: 1019px) {
   .restaurant_title {
     padding: 0 180px; } }
 @media screen and (min-width: 1020px) {
-  #menu_index .header__logo img {
-    width: 100%; }
+  #menu_index {
+    margin: auto;
+    max-width: 1280px; }
+    #menu_index .header__logo img {
+      width: 100%; }
+
+  main {
+    margin-top: -30px; }
 
   .cards_menu {
     width: 80%; }
@@ -509,6 +479,7 @@ main {
     margin: 10px auto 0px 10px; }
   .restaurants .restaurants_cards {
     box-shadow: 2px 2px 10px 2px #eaeaea;
+    position: relative;
     display: flex;
     flex-direction: column;
     width: auto;
@@ -525,12 +496,12 @@ main {
       overflow: hidden; }
 
 .cards_news {
+  right: 20px;
   text-align: center;
   background-color: #99e2d0;
   color: #2c9c81;
   width: 100px;
   position: absolute;
-  right: 25px;
   margin-top: 10px;
   padding: 7px 8px;
   font-weight: bold; }
@@ -561,6 +532,10 @@ footer {
   #header_index .header__logo img {
     width: 80%; } }
 @media screen and (min-width: 992px) {
+  #header_index, main {
+    margin: auto;
+    max-width: 1280px; }
+
   #header_index .header__logo img {
     width: 100%; }
 
@@ -576,13 +551,22 @@ footer {
     flex-direction: row;
     justify-content: space-around; }
     .restaurants_cards_container .restaurants_cards {
-      width: 100%; } }
+      width: 100%; }
+
+  footer {
+    text-align: center; } }
 @media screen and (min-width: 768px) and (max-width: 1019px) {
   .restaurant_title {
     padding: 0 180px; } }
 @media screen and (min-width: 1020px) {
-  #menu_index .header__logo img {
-    width: 100%; }
+  #menu_index {
+    margin: auto;
+    max-width: 1280px; }
+    #menu_index .header__logo img {
+      width: 100%; }
+
+  main {
+    margin-top: -30px; }
 
   .cards_menu {
     width: 80%; }

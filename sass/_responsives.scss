@@ -16,7 +16,12 @@
   
   
   @media screen and (min-width: 992px) {
-          
+    
+        #header_index, main {
+      margin: auto;
+      max-width: 1280px;
+    }
+
     #header_index {
       // flex-direction: column;
   
@@ -45,6 +50,10 @@
         width: 100%;
       }
     }
+
+    footer {
+      text-align: center;
+    }
   
   }
 
@@ -60,9 +69,17 @@
 
 @media screen and (min-width: 1020px) {
   #menu_index {
+
+    margin: auto;
+      max-width: 1280px;
+
     .header__logo img {
       width: 100%;
     }
+  }
+
+  main {
+    margin-top: -30px;
   }
 
   .cards_menu {
